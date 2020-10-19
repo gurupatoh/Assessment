@@ -1,1 +1,6 @@
-SELECT INSTITUTION_NAME,COURSE_NAME,NUMBER_OF_STUDENTS FROM educationG
+SELECT institution.name,course.name student.studentid  
+FROM institution,student,course join course 
+ON institution.institutionid = course.institution 
+join student 
+ON course.courseid = student.course
+
